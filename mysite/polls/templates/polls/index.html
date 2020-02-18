@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if list_questions %}
+<ul>
+    {% for q in list_questions %}
+        <li>
+            <a href="/polls/{{q.id}}/" > <b> {{ q.question_text }} </b></a>
+        </li>
+    {% endfor %}
+</ul>
+{% else %}
+    <p> You don't have any questions! Please add some. </p>
+{% endif %}
+</body>
+</html>
