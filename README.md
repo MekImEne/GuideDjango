@@ -1,1 +1,1 @@
-# GuideStartDjango
+# GuideDjango
